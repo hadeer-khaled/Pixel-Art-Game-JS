@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+:root{
+    --body-color:#e5e5e5;
+    --grid-color:  #0000003b;
+    --box-color:#00000098;
+}
+body{
+    background-color: var(--body-color);
+}
+.options-div{
+    margin: 20px auto 20px;
+    width: fit-content;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-size{
+    height: 20px;
+    width: 50px;
+}
+.btn{
+    height: 35px;
+    padding: 2px 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    
+    border-radius: 4px;
+    
+}
+.reset-btn{
+    background-color:  black;
+    color: white;
+    border: none;
+}
+.reset-btn:active{
+    box-shadow: 0px 0px 6px 4px #9e9e9ea1;
+}
+.erase-btn{
+    color: 00000098;
+    border: 2px solid #000000;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.erase-btn:active{
+    box-shadow: 0px 0px 6px 4px #9e9e9ea1;
+}
+.container{
+--grid-size:10;
+background-color: var(--grid-color);
+width: 500px;
+height: 500px;
+display: grid;
+grid-template-columns: repeat(var(--grid-size),1fr);
+grid-template-rows: repeat(var(--grid-size),1fr);
+gap: 3px;
+padding: 3px;
+margin: 0px auto;
+overflow: hidden;
+box-shadow: 0px 0px 4px 2px #9e9e9ea1;
+}
+.box{
+    background-color: var(--box-color);
+}

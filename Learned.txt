@@ -1,0 +1,9 @@
+mouseover Event
+mousedown Event
+click Event
+keyup Event
+change
+
+
+
+https://pixel-art-game-js.netlify.app/
